@@ -1,0 +1,308 @@
+/* 清零内边距和外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 设置全局字体和颜色 */
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+}
+/* 清除默认列表样式 */
+li {
+    list-style: none;
+}
+/* 去掉链接的下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 设置清除浮动的类样式 */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* 设置盒子默认的宽度和居中显示 */
+.w {
+    width: 1226px;
+    margin: auto;
+}
+/* 设置头部样式 */
+.site-topbar {
+    height: 40px;
+    background-color: #333;
+}
+.site-topbar .topbar-nav {
+    float: left;
+}
+.site-topbar a {
+    /* display: inline-block; */
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.site-topbar a:hover {
+    color: #fff;
+}
+.site-topbar .w .sep {
+    margin: 0 0.4em;
+    color: #424242;
+}
+
+.site-topbar .topbar-cart {
+    float: right;
+    height: 40px;
+    width: 120px;
+    margin-left: 15px;
+    text-align: center;
+    background-color: #424242;
+}
+
+.site-topbar .icon-add-cart {
+    margin-right: 4px;
+    vertical-align: -2px;
+    font-size: 20px;
+}
+
+.site-topbar .topbar-cart a:hover {
+    color: #ff6700;
+}
+
+.site-topbar .topbar-cart:hover {
+    background-color: #fff;
+}
+
+.site-topbar .topbar-info {
+    float: right;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #b0b0b0;
+}
+
+.nothing {
+    height: 70px;
+    width: 200px;
+    float: left;
+    background-color: aqua;
+}
+.header1 {
+    height: 100px;
+}
+
+.header-logo img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    float: left;
+}
+.header-nav li {
+    float: left;
+    height: 50px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.header-nav li a:hover {
+    color: skyblue;
+}
+.header-search {
+    float: right;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.header-search button {
+    height: 50px;
+    width: 50px;
+}
+/* <!-- header部分结束 -->
+<!-- 2. banner部分开始 --> */
+.banner {
+    padding-bottom: 10px;
+}
+.banner .site-category {
+    height: 400px;
+    width: 270px;
+    float:left;
+}
+.site-category li {
+    height: 30px;
+    width: 250px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: slategray;
+}
+.site-category li a {
+    color: snow;
+}
+.site-category li:hover {
+    background-color:orange;
+}
+.site-category span {
+    float: right;
+}
+.banner-img {
+    height: 400px;
+}
+.banner-img img {
+    height: 400px;
+    width: 956px;
+    float: left;
+}
+/* banner-sub部分开始 */
+.banner-sub {
+    height: 210px;
+}
+.home-channel {
+    height: 210px;
+    width: 270px;
+    background-color: rgb(66, 64, 63);
+    float: left;
+}
+.home-channel li {
+    float: left;
+    height: 90px;
+    width: 70px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 5px;
+}
+.home-channel li a {
+    color: snow;
+}
+.home-promo {
+    height: 210px;
+    width: 956px;
+    float: right;
+    padding-bottom: 10px;
+    
+}
+.home-promo img {
+    height: 210px;
+    width: 307px;
+    float: left;
+    padding-left: 11px;
+}
+.banner-box {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+.banner-box img {
+    width: 1226px;
+    height: 123px;
+}
+/* <!-- banner-sub部分结束 -->
+<!-- 3. 产品模块开始 --> */
+.background-product {
+    background: #f5f5f5
+}
+.title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.more {
+    float: right;
+}
+.more a {
+    font-size: 18px;
+    line-height: 58px;
+    color: #333;
+}
+.more a:hover{
+    color: coral;
+}
+.products-main {
+    height: 614px;
+    width: 1226px;
+}
+.box1 {
+    float :left;
+    box-sizing: border-box;
+}
+.box2 {
+    height: 614px;
+    width: 992px;
+    float: left;
+    
+}
+.box2 li {
+    float: left;
+    height: 300px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+.box2 li a:hover {
+    color: aqua;
+    text-decoration:underline;
+}
+.ll {
+    margin: 72px;
+    font-size: 22px;
+    font-weight: 200px;
+    line-height: 58px;
+    color: rgb(0, 225, 255);
+    vertical-align: middle;
+}
+/* <!-- 产品模块结束 -->
+<!-- 4. 底栏模块开始 --> */
+.foot-link {
+    box-sizing: border-box;
+}
+.foot-link dl {
+    float:left;
+    height: 300px;
+    width: 176px;
+    margin-top: 20px;
+}
+.foot-link dl dt {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.foot-link dl dd {
+    padding-bottom: 10px;
+}
+.col-contact {
+    float: left;
+    padding-top: 20px;
+}
+.phone {
+    font-size: 25px;
+    color: aqua;
+}
+.col-contact a span{
+    text-align: center;
+    margin: 44px;
+    font-size: 18px;
+    color: coral;
+}
+.follow img {
+    height: 100px;
+    width: 100px;
+    padding-left: 55px;
+}
+/* <!-- 底栏模块结束 -->
+<!-- 5. 侧边图标开始 --> */
+.home-tool-bar {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    width: 100px;
+    height: 500px;
+}
+.home-tool-bar a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
